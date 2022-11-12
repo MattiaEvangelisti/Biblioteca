@@ -1,0 +1,36 @@
+﻿<Window x:Class="Biblioteca.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteca"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="919">
+    <Grid>
+        <Button x:Name="btnAddLibro" Content="Aggiungi Libro" HorizontalAlignment="Left" Height="41" Margin="36,154,0,0" VerticalAlignment="Top" Width="376" Click="btnAddLibro_Click"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="26" Margin="35,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Height="26" Margin="111,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="txtAnno" HorizontalAlignment="Left" Height="26" Margin="188,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Height="26" Margin="264,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="txtNumPag" HorizontalAlignment="Left" Height="26" Margin="340,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Autore" HorizontalAlignment="Left" Height="29" Margin="35,56,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Titolo" HorizontalAlignment="Left" Height="29" Margin="111,56,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label Content="Anno di&#xD;&#xA;pubblicazione" HorizontalAlignment="Left" Height="51" Margin="188,31,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="Editore" HorizontalAlignment="Left" Height="29" Margin="272,53,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label Content="Numero di &#xD;&#xA;pagine" HorizontalAlignment="Left" Height="51" Margin="345,31,0,0" VerticalAlignment="Top" Width="66"/>
+        <Button x:Name="btnSearchTitolo" Content="Cerca titolo" HorizontalAlignment="Left" Height="32" Margin="8,363,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="txtSearchTitolo" HorizontalAlignment="Left" Height="24" Margin="8,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <Button x:Name="btnSearchAutore" Content="Cerca da autore" HorizontalAlignment="Left" Height="32" Margin="174,365,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="txtSearchAutore" HorizontalAlignment="Left" Height="24" Margin="174,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnContaLibri" Content="Calcola libri&#xD;&#xA;totali" HorizontalAlignment="Left" Height="61" Margin="340,336,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnStampaAutore" Content="Stampa" HorizontalAlignment="Left" Height="25" Margin="35,121,0,0" VerticalAlignment="Top" Width="71" Click="btnStampaAutore_Click"/>
+        <Button x:Name="btnStampaTitolo" Content="Stampa" HorizontalAlignment="Left" Height="25" Margin="111,121,0,0" VerticalAlignment="Top" Width="72" Click="btnStampaTitolo_Click"/>
+        <Button x:Name="btnStampaAnno" Content="Stampa" HorizontalAlignment="Left" Height="25" Margin="188,121,0,0" VerticalAlignment="Top" Width="71" Click="btnStampaAnno_Click"/>
+        <Button x:Name="btnStampaEditore" Content="Stampa" HorizontalAlignment="Left" Height="25" Margin="264,121,0,0" VerticalAlignment="Top" Width="71" Click="btnStampaEditore_Click"/>
+        <Button x:Name="btnStampaNumPag" Content="Stampa" HorizontalAlignment="Left" Height="25" Margin="340,121,0,0" VerticalAlignment="Top" Width="71" Click="btnStampaNumPag_Click"/>
+        <Button x:Name="btnModifica" Content="Modifica valori" HorizontalAlignment="Left" Height="17" Margin="36,200,0,0" VerticalAlignment="Top" Width="376" Click="btnModifica_Click"/>
+        <Label Content="Per modificare i valori, scrivere il loro nuovo valore.&#xD;&#xA;Se non si vuole modificare un valore allora scrivere nil" HorizontalAlignment="Left" Height="51" Margin="66,222,0,0" VerticalAlignment="Top" Width="332"/>
+        <Button Content="Biblioteca" HorizontalAlignment="Left" Height="94" Margin="610,154,0,0" VerticalAlignment="Top" Width="235" Click="Button_Click"/>
+
+    </Grid>
+</Window>
